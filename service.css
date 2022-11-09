@@ -1,0 +1,241 @@
+
+.service{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#6454f0,#6ee2f5);
+    background-position: center;
+    background-size: cover;
+}
+.area {
+    background-color: #fff;
+    display: flex;
+}
+.area h1{
+    font-size: 30px;
+    padding: 6px;
+}
+.area h1 span{
+    margin-left: 9px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+    margin-right: 5px;
+    color: black;
+}
+.area nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 6px;
+  left: 0;
+  bottom: -6px;
+  background:linear-gradient(#6454f0,#6ee2f5)  ;
+  position: absolute;
+  
+  transition: 0.3s;
+}
+.area nav ul li a:hover::after{
+width: 100%;
+}
+.main{
+    display: flex;
+}
+.content{
+ flex-basis: 50%;
+}
+.content h1{
+    margin-top: 35%;
+    color: #fff;
+    font-size: 47px;
+    margin-left: 4%;
+    padding: 5px;
+    animation-delay: 0.5s;
+}
+.content p{
+    margin-left: 4%;
+    color: #fff;
+    font-size: 20px;
+    animation-delay: 1s;
+    
+}
+.content a{
+    color: #fff;
+font-size: 35px;
+text-decoration: none;
+margin-left: 10%;
+margin-top: 4px;
+}
+.staff {
+    flex-basis: 50%;
+}
+.staff img{
+    text-align: right;
+    border-radius: 5px;
+   margin-top: 25%;
+   width: 600px;
+}
+.staff.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+/******** area ********/
+.ara{
+    width: 100%;
+    height: 120vh;
+    background-color: #f2f2f2;
+    background-position: center;
+    background-size: cover;
+}
+.city h1{
+    text-align: center;
+    font-size: 50px;
+color: black;
+}
+/*
+.citys{
+    display: flex;
+ 
+}
+.cty div img{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 5%;
+    width: 200px;
+    flex-basis: 55%;
+}
+*/
+.cty{
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+   grid-gap:30px ;
+}
+.cty div img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s;
+    }
+    .cty div img:hover{
+        transform: translateY(-9px);
+    }
+.cty div{
+    position: relative;
+}
+.cty div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+   color: #fff;
+   font-size: 25px;
+}
+
+/***** Idea *****/
+
+.idea{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(https://png.pngtree.com/thumb_back/fw800/background/20210911/pngtree-modern-architecture-library-book-bar-interior-architecture-bookshelf-books-photography-maps-image_860569.jpg);
+    background-position: absolute;
+    box-sizing: border-box;
+    background-size: cover;
+
+}
+.hang{
+    display: flex;
+}
+.hang img{
+    flex-basis: 24%;
+}
+.hang h1{
+    flex-basis: 24%;
+    color: #fff;
+   margin-left: 13%;
+   font-size: 34px;
+   padding: 17px;
+}
+
+
+.plant img{
+text-align: right;
+margin-left: 87%;
+margin-top: 6%;
+}
+
+/*  animation */
+.partner{
+    /*
+width: 95vmin;*/
+width: 100vmin;
+position: absolute;
+transform: translate(-50%,-50%);
+margin-left:50%;
+margin-top: 8%;
+background-color: #fff;
+overflow: hidden;
+border: 20px solid #fff;
+border-radius: 8px;
+box-shadow: 10px 25px 30px rgba(17, 17, 59, 0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    
+    animation: slide 16s infinite;
+}
+.wrapper img{
+    width:110%;
+    padding:13px;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}

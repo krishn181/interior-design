@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*EE9CA7*/
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgb(245, 245, 245),rgba(0,0,0,0.7)),url(https://www.nitidodesign.com/images/02_Featured%20Projects/01_Bombay%20Realty%20ICC%20Towers%20Residence%20-%20Residential%20Interiors%20-%201500%20sq%20ft/watermarked/01.JPG);
+    background-size: cover;
+    background-position: center;
+    background: cover;
+   
+
+}
+.head{
+    display: flex;
+background-color: #ffff;
+padding: 3px ;
+   
+}
+nav{ 
+    flex: 1;
+    text-align: right;
+  
+}
+nav ul li{
+    display: inline-block;
+    padding: 7px ;
+}
+.head nav ul li a {
+    text-decoration: none ;
+    color:black;
+    font-size: 20px;
+   margin-left: 5px ;
+   transition: transform 0.3s;
+}
+.head nav ul li a:hover{
+    font-size: 30px;
+    transform: translateY(-6px);
+    border: 4px solid red;
+    border-radius: 10px;
+    padding: 4px ;
+    box-shadow: 4px 5px 7px rgba(0,0,0,0.5);
+}
+.head h1 span{
+    padding-left: 8px ;
+}
+.head h1{
+    margin-left: 5px ;
+}
+  .center{
+    margin-top: 18%;
+    margin-left: 9%;
+  
+ }
+  .center h1{ 
+   font-size: 49px;
+   font-weight: 700;
+color: black;}
+.center h1 span{
+    color: #302399;
+}
+
+/*--- Gallery ----*/
+
+.gallery{
+    width: 100%;
+    height: 100vh;/*
+ background-image: linear-gradient(rgba(0,0,0,0.5),#98DAD9),url(https://img.freepik.com/premium-photo/modern-living-room-with-sofa-decorations_180507-252.jpg?w=2000);
+*/ 
+background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url(data:image/jpeg;base64,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);
+background-size: cover;
+ background-position: center;
+ background: cover;
+}
+.contain h1{
+    text-align: left;
+    font-size: 38px;
+   padding-top: 3%;
+    margin-left: 3%;
+    color: #ffffff;
+}
+.im{
+    padding-left: 3px ;
+    padding-right: 3px;
+
+}
+.im img{
+    margin-top: 7px;
+    margin-left: 4%;
+    width: 340px;
+    border-radius: 5%;
+    box-shadow: 4px 6px 8px black;
+    transition: transform 0.3s;
+}
+.im img:hover{
+    transform: translateY(-12px);
+   
+}
+.imge img{
+    margin-top: 20px;
+    margin-left: 4%;
+    width: 340px;
+    border-radius: 5%;
+    box-shadow: 4px 6px 8px black;
+    transition: transform 0.3s;
+}
+.imge img:hover{
+transform: translateY(-12px );
+}
+
+/*---- contact -----*/
+
+.contact{
+    width: 100%;
+    height: 100vh;
+background: linear-gradient(#ffff,rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background: cover;
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-top: 2%;
+   box-sizing: border-box;
+}
+.con h1{
+    text-align: center;
+    font-size: 50px;
+    color: #302399;
+}
+.fl {
+    display:  flex;/*
+margin-left:25% ; */
+  margin-top: 14%;
+}
+.fl .address{
+    font-weight: 400;
+    font-size: 30px;
+    color: #302399;
+    flex-basis: 58%;
+  
+}
+.fl .mob{ 
+  
+    font-weight: 400;
+    font-size: 30px;
+    color: #302399;
+    flex-basis: 58%;
+    
+}
+.fl .mail{
+    
+    font-weight: 400;
+    font-size: 30px;
+    color: #302399;
+    flex-basis: 58%;
+    
+}
+.social{
+    display: flex;
+    text-align: center;
+    margin-top:6%;
+    align-items: center;
+    justify-content: center;
+  }
+  .fb img{
+    margin-left: 6px;
+    box-shadow: 0 5px 7px #000;
+    cursor:pointer;
+    transition: transform 0.3s;
+  }
+  .fb img:hover{
+    transform:translateY(-12px);
+  }
+  .insta img{
+    margin-left: 6px;
+    margin-right: 8px;
+    box-shadow: 0 5px 7px #000;
+    transition: transform 0.3s;
+    cursor:pointer;
+  }
+  .insta img:hover{
+    transform:translateY(-12px);
+  }
+  .twit img{
+    box-shadow: 0 5px 7px #000;
+    transition: transform 0.3s;
+    cursor:pointer;
+  }
+  .twit img:hover{
+    transform:translateY(-12px);
+  }
+  .copyright p{
+    text-align: center;
+    font-size: 12px;
+    color: #302399;
+margin-top: 4%;
+
+  }
+
+  

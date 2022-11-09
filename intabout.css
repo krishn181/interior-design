@@ -1,0 +1,145 @@
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   .head{
+    width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url(https://img.freepik.com/free-vector/happy-freelancer-with-computer-home-young-man-sitting-armchair-using-laptop-chatting-online-smiling-vector-illustration-distance-work-online-learning-freelance_74855-8401.jpg?w=2000);
+  background-position: center;
+  background-image: center;
+  background-size: cover;
+ position: relative;
+  }
+  
+  .heading {
+    display: flex;
+ 
+  }
+  .heading h1{
+    font-size: 36px;
+    color: #fff;
+    padding: 5px;
+
+  }
+  .heading h1 span{
+    margin-left: 10px;
+  }
+  nav{
+   
+    flex:1;
+    text-align: right;
+  }
+  nav ul li{
+    display: inline-block;
+    padding: 6px;
+  }
+  nav ul li a{
+ margin-top: 5px;
+    color: #fff;
+    font-size: 27px;
+ text-decoration: none;
+
+  }
+  nav ul li a:hover{
+
+ padding: 2px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius:18px;
+   border: 3px solid #ed6b5b;
+   color:#323232;
+
+  }
+  .data{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .data p{
+  
+    margin: 10%;
+    color: #fff;
+    font-size: 16px;
+  }
+  .data img{
+    margin-top: 3%;
+    margin: 5%;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius:6px ;
+   
+  }
+  .det {
+    width: 100%;
+    height: 53vh;
+    background-position: center;
+background-size: cover;
+  
+}
+.det h1{
+  position: absolute;
+  top: 99%;
+  left: 50%;
+transform: translate(-50%,-50%);
+font-size: 160px;
+-webkit-text-stroke: 1px #3232;
+color: transparent;
+background-image: linear-gradient(#323232,#3232);
+background-repeat: no-repeat;
+-webkit-background-clip: text;
+background-position: -750px 0;  
+animation:backcolor 5s linear infinite alternate;
+}
+@keyframes backcolor {
+  100%{
+    background-position: 0 0 ;
+  }
+  
+}
+.pho {
+  display: flex;
+  margin-top:13% ;
+  margin-left: 38%;
+}
+.deta img{
+  border-radius: 50px;
+  margin-left: 9px;
+
+}
+.text{
+  display: flex;
+  margin-top: 4%;
+}
+.him {
+  margin-left: 18%;
+}
+.krishn{
+  margin-left: 2%;
+
+}
+.rishit{
+  margin-left: 2%;
+}
+.him span{
+  margin-left: 17%;
+}
+.krishn span{
+  margin-left: 20px;
+
+}
+.krishn p{
+  margin-left: 12px;
+}
+.discription p {
+  margin-left: 4%;
+  margin-right: 4%;
+ margin-top: 2%;
+}
+.discription p span{
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.discription p span span{
+  margin-left: 5%;
+  margin-right: 5%;
+}
